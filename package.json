@@ -1,0 +1,22 @@
+{
+  "name": "js.aca_1.4_davidhabetyan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavIdHabeTyan/Js.ACA_1.4_DavidHabetyan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavIdHabeTyan/Js.ACA_1.4_DavidHabetyan/issues"
+  },
+  "homepage": "https://github.com/DavIdHabeTyan/Js.ACA_1.4_DavidHabetyan#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
