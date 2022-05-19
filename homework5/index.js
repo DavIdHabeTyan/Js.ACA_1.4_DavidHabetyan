@@ -1,17 +1,12 @@
-
-
-
-
-
-
 //exercises 3
 function delay(f, ms) {
-const sum = 5 + 5;
-setTimeout(function() {
-   f(sum)
-}, ms)
+   const sum = 5 + 5
+   setTimeout(function () {
+      f(sum)
+   }, ms)
 }
-delay(function(callback){
+
+delay(function (callback) {
    console.log(callback)
 }, 3000)
 
@@ -22,7 +17,7 @@ function debounce(f, ms) {
 
    let isCooldown = false;
 
-   return function() {
+   return function () {
       if (isCooldown) return;
 
       f.apply(this, arguments);
