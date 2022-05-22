@@ -12,20 +12,27 @@ delay(function (callback) {
 
 
 //exercises 4
-
-function debounce(f, ms) {
-
-   let isCooldown = false;
-
-   return function () {
-      if (isCooldown) return;
-
-      f.apply(this, arguments);
-
-      isCooldown = true;
-
-      setTimeout(() => isCooldown = false, ms);
-   };
-
+function f(a, b) {
+   return a ** b;
 }
+function decorator(wrapper, ms) {
+   let active = false;
+
+   function innerFunc(...rest) {
+      if (active) {
+         return;
+      }
+      active = true;
+      setTimeout(() => active = false, ms);
+      return wrapper.apply(this, rest);
+   }
+
+   return innerFunc;
+}
+
+let a = decorator(f, 1000);
+
+console.log(a(5, 2))
+console.log(a(10, 20))
+setTimeout(() => console.log(a(4, 1)), 1200)
 
