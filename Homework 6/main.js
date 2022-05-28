@@ -63,7 +63,7 @@ function binarySearch(arr, numb) {
       mid = Math.round((right - left) / 2) + left;
 
       if(numb === sortArr[mid]) {
-         return mid;
+         return `finded index ${mid} `;
       } else if(numb < sortArr[mid]) {
          right = mid - 1;
       } else {
@@ -73,7 +73,7 @@ function binarySearch(arr, numb) {
    }
 return false ;
 }
-console.log(binarySearch(array, 3))
+console.log(binarySearch(array, 11))
 
 
 // 4. Create a simple portfolio.
