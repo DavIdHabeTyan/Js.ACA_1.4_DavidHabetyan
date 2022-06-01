@@ -80,4 +80,7 @@ console.log(binarySearch(array, 11))
 
 // 4. Create a simple portfolio.
 
-// http://cvdavidhabetyandev.zzz.com.ua/
+//     http://cvdavidhabetyandev.zzz.com.ua/
+
+//   https://davidhabetyan.github.io/CV-David-Habetyan/
+
